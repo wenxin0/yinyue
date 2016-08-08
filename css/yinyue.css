@@ -12,7 +12,8 @@ img{
 	font-size: 0;
 }
 body{
-	background: #FFFFFF;
+	background: #D8F0FC url(../img/bg2.jpg) no-repeat;
+    background-size:100%;
 }
 .player{
 	width: 540px;
@@ -501,4 +502,49 @@ body{
 	position: absolute;
 	top: 0;
 	left: 68px;
+}
+.icon{
+    width:120px;
+    height:120px;
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:160px;
+    margin:auto;
+    background: url(../img/music.png)no-repeat;
+	cursor: pointer;
+    animation:bian 3s ease infinite;
+}
+@keyframes bian {
+    0%{
+        opacity:1;
+        transform:scale3d(0.5,0.5,0);
+    }
+    50%{
+        transform:scale3d(0.8,0.8,0);
+    }
+    100%{
+        opacity:1;
+        transform:scale3d(0.5,0.5,0);
+    }
+}
+.youle{
+    width:60px;
+    height: 180px;
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:100px;
+    margin:auto;
+    animation:zhuan 2s ease infinite;
+}
+@keyframes zhuan {
+    0%{
+        transform:rotate3d(0,1,0,0);
+    }
+    100%{
+        transform:rotate3d(0,1,0,-360deg);
+    }
 }
